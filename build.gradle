@@ -22,6 +22,10 @@ repositories {
     jcenter()
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0' //version required
+}
+
 // In this section you declare the dependencies for your production and test code
 dependencies {
     testCompile 'junit:junit:4.12'
